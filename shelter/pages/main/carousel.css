@@ -1,0 +1,73 @@
+.carousel-wrapper {
+    max-width:990px ;
+    overflow: hidden;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    left: -990px;
+}
+
+.hiddent {
+    display: none;
+}
+@keyframes move-right {
+ from {left: -990px;}
+  to {left: -1980px;}
+}
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+}
+@keyframes move-left {
+  from {left: -990px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+
+
+
+
+
+/* 1279px */
+@media(max-width:1279px) {
+    .carousel{
+        left:-580px;
+    }
+   .carousel-wrapper {
+       max-width: 580px;
+   }
+   @keyframes move-left {
+       from {left:-580px}
+       to {left: 0;}
+   }
+    @keyframes move-right {
+       from {left: -580px;}
+        to {left: -1160px;}
+   }
+
+}
+
+/* 767px */
+@media(max-width:767px){
+    .carousel-wrapper {
+        max-width: 270px;
+    }
+     .carousel{
+        left:-270px;
+    }
+   @keyframes move-left {
+       from {left:-270px}
+       to {left: 0;}
+   }
+    @keyframes move-right {
+       from {left: -270px;}
+        to {left: -540px;}
+   }
+
+}
