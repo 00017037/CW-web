@@ -1,0 +1,37 @@
+.carousel-wrapper {
+    overflow: hidden;
+    height: 930px;
+}
+.carousel {
+    position: relative;
+}
+
+/* @keyframes move-right {
+    from{bottom:0px};
+    to{bottom:930px};
+}
+.move-right {
+    animation-name: move-right;
+    animation-duration: 5s;
+}
+@keyframes move-left {
+    from{top:-930px};
+    to {top:0};
+}
+.move-left {
+    animation-name: move-left;
+    animation-duration: 1s;
+} */
+
+@media(max-width:1279px){
+  .carousel-wrapper {
+      height: 1365px;
+  }
+}
+
+
+@media(max-width:767px) {
+   .carousel-wrapper {
+       height:1365px ;
+   }
+}
