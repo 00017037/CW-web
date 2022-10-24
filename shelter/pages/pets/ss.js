@@ -117,41 +117,11 @@ let octStack = [];
 let k;
 
 // loading cards randomly in slider with DOM
-function cardLoad(){
-
-    // switch(petStack.length){
-    //     case 0:
-    //         k=4;
-    //         break;
-    //     case 1:
-    //         k=0;
-    //         break;
-    //     case 2:
-    //         k=2;
-    //         break;
-    //     case 3:
-    //         k=1;
-    //         break;
-    //     case 4:
-    //         k=5;
-    //         break;
-    //     case 5:
-    //         k=7;
-    //         break;
-    //     case 6:
-    //         k=3;
-    //         break;
-    //     case 7:
-    //         k=6;
-    //         break;
-    //     default:
-    //         k = getRandomNumberBetween(0,7);
-    // }
-
+function cardLoad() {
+    
     k = getRandomNumberBetween(0,7);
     petStack.push(k);
 
-    // if(petStack.length > 8){
     if(octStack.length >= 8){
         octStack = [];
     }
@@ -159,7 +129,6 @@ function cardLoad(){
         k = getRandomNumberBetween(0,7);
     }
     octStack.push(k);
-    // }
 
 
 
