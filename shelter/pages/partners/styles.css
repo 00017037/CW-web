@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Arial;
+  src: url(../../assets/fonts/arial.ttf);
+}
+:root{
+  --cursor-pointer: url(../../assets/icons/cursor-pointer.svg), auto;
+    --cursor-normal: url(../../assets/icons/cursor-default.svg), auto;
+    --georgia:Georgia;
+    --arial:Arial;
+    --color-primary:#F1CDB3;
+    --color-grey:#CDCDCD;
+    --color-light:white;
+    --color-dark-xl:#4C4C4C;
+}
+
+main {
+  min-height: 400px;
+}
+.partners-heading {
+  margin: 20px auto;
+  font-family: var(--georgia);
+  width: fit-content;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 35.2px;
+  letter-spacing: 0.06em;
+  color:  #545454;
+}
+
+.partners {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
